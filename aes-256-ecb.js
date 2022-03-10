@@ -1,10 +1,5 @@
 const crypto = require("crypto");
 
-// Documentation: https://nodejs.org/dist/latest-v10.x/docs/api/crypto.html#crypto_class_cipher
-// This should not be used for production, since decryption is a two-way function.
-// Encryption ≠ Hashing
-// Salted password is composed of "algorithm$salt$password"
-
 const algorithm = "aes-256-ecb"
 const secretKey = "D0E276D0144890D3BDA30EGDH1578F81";   // 32 bytes
 const salt = "DYOycGhXqyfO";                            // can be any salted string
